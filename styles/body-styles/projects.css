@@ -1,0 +1,41 @@
+.projects-titls{
+    & p{
+        font-size: 70px;
+    font-weight: 100;
+    color: var(--sec-color); 
+    letter-spacing: 15px;
+    text-align: center;
+    margin-top:80px ;
+    margin-left:15px ;
+    margin-bottom:10px ;
+    }
+
+}
+.no-projects{
+    text-align: center;
+    margin: 60px;
+    font-size: 30px;
+    color: #19183B;
+}
+.projects-line{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    & .line{
+    width: 100%;
+    position: absolute;
+    height: var(--line-hieght);
+    background-color: var(--sec-color);
+    z-index: -1;
+    }
+    & .projects-icon{
+    text-align: center;
+    
+    & i{
+        font-size: 20px;
+           color: var(--sec-color); 
+           background-color: var(--background-color);
+           width: 70px;
+    }
+}
+}

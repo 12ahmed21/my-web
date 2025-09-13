@@ -1,0 +1,75 @@
+.skils{
+    margin-top:10px ;
+    & .line{
+    width: 100%;
+    position: absolute;
+    height: var(--line-hieght);
+    background-color: var(--sec-color);
+    z-index: -1;
+}
+& .skils-icon{
+    text-align: center;
+    
+    & i{
+        font-size: 20px;
+           color: var(--sec-color); 
+           background-color: var(--background-color);
+           width: 70px;
+    }
+}
+}
+.skils-line{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skils-titls{
+    & p{
+        font-size: 60px;
+    font-weight: 100;
+    color: var(--sec-color); 
+    letter-spacing: 15px;
+    text-align: center;
+    margin-top:80px ;
+    }
+
+}
+.skils-dis{
+font-size:40px ;
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+& p{
+    color: var(--sec-color);
+     margin:5px ;
+}
+& > div{
+    margin: 30px 5px;
+    width: 300px;
+    height: 130px;
+    border: 2px solid var(--sec-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & i{
+        font-size: 60px;
+        width: 100px;
+        color: var(--sec-color);
+    }
+}
+}
+.skill-description{
+    /* margin-left:5px ; */
+    & p{
+            font-size: 13px;
+            
+    }
+    h4{
+        color: var(--sec-color);
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+}
