@@ -87,3 +87,27 @@
         color: var(--essential);
     }
 }
+.cv-line{
+    margin-top:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 120px;
+    & p{
+    margin: 0;
+    background-color: var(--background-color);
+    padding: 0 20px;
+    border-left: 2px solid var(--sec-color);
+    border-right: 2px solid var(--sec-color);
+    border-radius: var(--border-radius);
+    letter-spacing: 4px;
+    }
+& .line{
+    width: 100%;
+    position: absolute;
+    height: var(--line-hieght);
+    background-color: var(--sec-color);
+    z-index: -1;
+}
+}
