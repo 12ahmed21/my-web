@@ -15,17 +15,12 @@
     top: 50px;
     left: -100px;
     transform: rotate(30deg);
-    animation: meteor 0.7s 1s linear infinite;
+    animation: meteor 0.7s linear forwards;
     z-index: 100;
 
 }
 @keyframes meteor {
-    0%{
-        top: 50px;
-        left: 0px;
-        opacity: 1;
-    }
-    100%{
+    to{
         top: 400px;
         left: 500px;
         opacity: 0;
@@ -36,22 +31,17 @@
     height: 5px;
     background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
     position: absolute;
-    top: 50px;
-    right: -150px;
-    transform: rotate(-37deg);
-    animation: meteor2 0.7s 3s linear infinite;
+    top: 0px;
+    left: 50px;
+    transform: rotate(-102deg);
+    animation: meteor2 0.7s linear forwards;
     z-index: 100;
 
 }
 @keyframes meteor2 {
-    0%{
-        top: 50px;
-        right: 0px;
-        opacity: 1;
-    }
-    100%{
+    to{
         top: 450px;
-        right: 450px;
+        left: 150px;
         opacity: 0;
     }
 }
@@ -62,19 +52,14 @@
     position: absolute;
     top: -50px;
     left: 100px;
-    transform: rotate(60deg);
-    animation: meteor3 0.7s 5s linear infinite;
+    transform: rotate(70deg);
+    animation: meteor3 0.7s linear forwards;
     z-index: 100;
 
 }
 @keyframes meteor3 {
-    0%{
-        top: 0px;
-        left: 100px;
-        opacity: 1;
-    }
-    100%{
-        top: 500px;
+    to{
+        top: 800px;
         left: 400px;
         opacity: 0;
     }
@@ -84,21 +69,16 @@
     height: 5px;
     background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
     position: absolute;
-    top: -50px;
+    top: 0px;
     right: 100px;
     transform: rotate(-80deg);
-    animation: meteor4 0.7s 2s linear infinite;
+    animation: meteor4 0.7s  linear forwards;
     z-index: 100;
 
 }
 @keyframes meteor4 {
-    0%{
-        top: 0px;
-        right: 100px;
-        opacity: 1;
-    }
-    100%{
-        top: 500px;
+    to{
+        top: 700px;
         right: 200px;
         opacity: 0;
     }
@@ -111,17 +91,12 @@
     top: 150px;
     left: -100px;
     transform: rotate(30deg);
-    animation: meteor5 0.7s 4s linear infinite;
+    animation: meteor5 0.7s linear forwards;
     z-index: 100;
 
 }
 @keyframes meteor5 {
-    0%{
-        top: 150px;
-        left: 0px;
-        opacity: 1;
-    }
-    100%{
+    to{
         top: 600px;
         left: 500px;
         opacity: 0;
