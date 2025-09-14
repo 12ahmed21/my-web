@@ -55,15 +55,17 @@
 }
 .saturn{
     position: absolute;
-    top: 450px;
+    top: 470px;
     left: 50px;
+    z-index: 256;
+    background-color: r;
     /* border-radius: 50%; */
-                  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.055) 70%);
+
     & img{
         width: 80px;
         height: 80px;
         /* border-radius: 50%; */
                 filter: blur(1px)opacity(0.5);
-
+                          mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.055) 70%);
     }
 }
