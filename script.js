@@ -21,7 +21,25 @@ function stars(){
         document.getElementById("starsFooter").innerHTML += star
     }
 }
-window.onload =  ()=>{
+
+function webstart(){
+let button = document.getElementById("startButton");
+button.addEventListener("click", ()=>{
+    document.body.style.overflowY = "scroll";
+    document.getElementById("scrollUp").classList.add("scroll-up-active");
+})
+    window.addEventListener("scroll", ()=>{
+        if(window.scrollY > 100){
+            document.getElementById("scrollUp").classList.add("scroll-up-active");
+        }else{
+            document.getElementById("scrollUp").classList.remove("scroll-up-active");
+        }})
+    document.getElementById("scrollUp").addEventListener("click", ()=>{
+        window.location.href = "#header"
+    })
+    }
+    window.onload =  ()=>{
     meteorShower()
     stars()
+    webstart()
 }

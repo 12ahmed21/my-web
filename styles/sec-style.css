@@ -15,5 +15,29 @@
 } 
 body{
         background-color:var(--background-color);
-        overflow-x: hidden;
+        overflow: hidden;
+        scroll-behavior: smooth;
+}
+.scroll-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--essential);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 1px black;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(-45deg);
+    right: -60px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.scroll-up-active{
+    right: 20px;
 }
